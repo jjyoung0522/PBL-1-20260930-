@@ -49,8 +49,6 @@ public class LibDB<T>
             if (element.getID().equals(ID)){
                 return (T) element;
             }
-            else{
-            }
         }
         return null;
     }
