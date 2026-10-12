@@ -52,6 +52,7 @@ public class LibraryManagementSystem
     public <T extends DB_Element> void printDB(LibDB<T> db)
     {
         db.printAllElements();
+        System.out.println();
     }
 
     /**
@@ -61,8 +62,12 @@ public class LibraryManagementSystem
      * @return    x 와 y의 합
      */
     public void printLoanList()
-    {
-        System.out.println(loanDB);
+    {   
+        System.out.println("----- 대출 현황 -----");
+        for(User loanUser : loanDB.keySet()){
+            System.out.println(loanUser + " ===> " + loanDB.get(loanUser));
+        }
+        System.out.println("--------------------");
     }
 
     /**

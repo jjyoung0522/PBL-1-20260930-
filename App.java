@@ -13,10 +13,12 @@ public class App
         LibraryManagementSystem libMS = new LibraryManagementSystem();
 
         LibDB<User> userDB = libMS.setUserDB("c:\\Temp\\UserData2025.txt");
+        System.out.println("----- 이용자 목록 출력 -----");
         libMS.printDB(userDB);
         
         
         LibDB<Book> bookDB = libMS.setBookDB("c:\\Temp\\BookData2025.txt");
+        System.out.println("----- 책 목록 출력 -----");
         libMS.printDB(bookDB);
         
         libMS.borrowBook("2025320001","B02");

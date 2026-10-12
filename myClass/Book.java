@@ -26,7 +26,7 @@ public class Book extends DB_Element
         return bookID;
     }
 
-    // public String toString(){
-
-    // }
+    public String toString(){
+        return "(" + bookID + ") " + title + ", " + author + ", " + publisher + ", " + year;
+    }
 }

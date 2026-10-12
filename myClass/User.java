@@ -20,7 +20,7 @@ public class User extends DB_Element
         return String.valueOf(stID);
     }
 
-    // public String toString(){
-
-    // }
+    public String toString(){
+        return "[" + stID + "] " + name;
+    }
 }
