@@ -34,7 +34,7 @@ public class LibDB<T>
     {
         db.add(element);
     }
-    
+
     /**
      * 메소드 예제 - 사용자에 맞게 주석을 바꾸십시오.
      *
@@ -43,7 +43,7 @@ public class LibDB<T>
      */
     public T findElement(String ID){
         Iterator<T> dbIterator = db.iterator();
-        
+
         while(dbIterator.hasNext()){
             DB_Element element = (DB_Element) dbIterator.next();
             if (element.getID().equals(ID)){

@@ -1,6 +1,5 @@
 package myClass;
 
-
 /**
  * User 클래스의 설명을 작성하세요.
  *
@@ -11,17 +10,17 @@ public class User extends DB_Element
 {
     private String name;
     private Integer stID;
-    
+
     public User(int stID, String name){
         this.stID = stID;
         this.name = name;
     }
-    
+
     public String getID(){
         return String.valueOf(stID);
     }
-    
+
     // public String toString(){
-        
+
     // }
 }

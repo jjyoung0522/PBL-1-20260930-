@@ -1,6 +1,5 @@
 package myClass;
 
-
 /**
  * Book 클래스의 설명을 작성하세요.
  *
@@ -14,7 +13,7 @@ public class Book extends DB_Element
     private String publisher;
     private String title;
     private int year;
-    
+
     public Book(String author, String bookID, String publisher, String title, int year){
         this.author = author;
         this.bookID = bookID;
@@ -22,12 +21,12 @@ public class Book extends DB_Element
         this.title = title;
         this.year =year;
     }
-    
+
     public String getID(){
         return bookID;
     }
-    
+
     // public String toString(){
-        
+
     // }
 }

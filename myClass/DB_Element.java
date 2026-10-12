@@ -1,6 +1,5 @@
 package myClass;
 
-
 /**
  * DB_Element 클래스의 설명을 작성하세요.
  *
