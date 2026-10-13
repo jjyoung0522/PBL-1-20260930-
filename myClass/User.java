@@ -1,16 +1,22 @@
 package myClass;
 
 /**
- * User 클래스의 설명을 작성하세요.
+ * 이용자 객체를 생성하고 생성된 이용자 객체의 여러가지 기능을 다루는 클래스
  *
- * @author (작성자 이름)
- * @version (버전 번호 또는 작성한 날짜)
+ * @author (2025320031 김단이 , 2023320040 이기웅, 2023320006 정준영)
+ * @version (2026.10.14)
  */
 public class User extends DB_Element
 {
     private String name;
     private Integer stID;
 
+    /**
+     * 이용자 객체를 만드는 메소드
+     *
+     * @param  stID 
+     * @return    x 와 y의 합
+     */
     public User(int stID, String name){
         this.stID = stID;
         this.name = name;

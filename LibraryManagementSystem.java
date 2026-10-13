@@ -62,7 +62,7 @@ public class LibraryManagementSystem
      * @return    x 와 y의 합
      */
     public void printLoanList()
-    {   
+    {
         System.out.println("----- 대출 현황 -----");
         for(User loanUser : loanDB.keySet()){
             System.out.println(loanUser + " ===> " + loanDB.get(loanUser));
