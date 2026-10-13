@@ -4,20 +4,18 @@ import java.util.Iterator;
 import myClass.*;
 
 /**
- * a 클래스의 설명을 작성하세요.
+ * 도서관시스템에서 사용되는 각각의 DB를 다루는 클래스
  *
- * @author (작성자 이름)
- * @version (버전 번호 또는 작성한 날짜)
+ * @author (2025320031 김단이 , 2023320040 이기웅, 2023320006 정준영)
+ * @version (2026.10.14)
  */
 public class LibDB<T>
 {
     private ArrayList<T> db;
 
     /**
-     * 메소드 예제 - 사용자에 맞게 주석을 바꾸십시오.
+     * 새 DB를 생성하는 메소드
      *
-     * @param  y  메소드의 샘플 파라미터
-     * @return    x 와 y의 합
      */
     public LibDB()
     {
@@ -25,10 +23,9 @@ public class LibDB<T>
     }
 
     /**
-     * 메소드 예제 - 사용자에 맞게 주석을 바꾸십시오.
+     * DB에 객체를 추가하는 메소드
      *
-     * @param  y  메소드의 샘플 파라미터
-     * @return    x 와 y의 합
+     * @param  element : 책 객체 또는 이용자 객체
      */
     public void addElement(T element)
     {
@@ -36,10 +33,10 @@ public class LibDB<T>
     }
 
     /**
-     * 메소드 예제 - 사용자에 맞게 주석을 바꾸십시오.
+     * DB에서 ID로 객체를 찾아 반환하는 메소드
      *
-     * @param  y  메소드의 샘플 파라미터
-     * @return    x 와 y의 합
+     * @param  ID : 찾고자 하는 객체의 ID
+     * @return  T : 찾아낸 객체
      */
     public T findElement(String ID){
         Iterator<T> dbIterator = db.iterator();
@@ -54,10 +51,8 @@ public class LibDB<T>
     }
 
     /**
-     * 메소드 예제 - 사용자에 맞게 주석을 바꾸십시오.
+     * DB에 저장되어 있는 모든 객체를 출력하는 메소드
      *
-     * @param  y  메소드의 샘플 파라미터
-     * @return    x 와 y의 합
      */
     public void printAllElements()
     {

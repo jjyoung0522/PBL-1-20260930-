@@ -1,4 +1,4 @@
-    package myClass;
+package myClass;
 
 /**
  * 책 객체를 만들고 생성된 책 객체의 여러가지 기능을 다루는 클래스
@@ -30,7 +30,7 @@ public class Book extends DB_Element
         this.title = title;
         this.year =year;
     }
-    
+
     /**
      * DB_Element의 getID를 오버라이딩한 메소드로 책 번호 반환.
      *
