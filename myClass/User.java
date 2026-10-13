@@ -14,7 +14,8 @@ public class User extends DB_Element
     /**
      * 이용자 객체를 만드는 메소드
      *
-     * @param  stID 
+     * @param  stID : 학번
+     *         name : 이용자 이름
      *          
      */
     public User(int stID, String name){
@@ -34,7 +35,7 @@ public class User extends DB_Element
     /**
      * 이용자 정보를 형식에 맞게 반환하는 메소드
      *
-     * @return    학번과 이름을 형식에 맞추어 반환
+     * @return    학번과 이용자 이름을 형식에 맞추어 반환
      */
     public String toString(){
         return "[" + stID + "] " + name;
