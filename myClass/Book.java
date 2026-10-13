@@ -43,7 +43,7 @@ public class Book extends DB_Element
     /**
      * 책 정보를 형식에 맞게 반환하는 메소드
      *
-     * @return    책ID, 제목, 저자, 출판사, 출판연도를 형식에 맞추어 반환
+     * @return    책 번호, 제목, 저자, 출판사, 출판연도를 형식에 맞추어 반환
      */
     public String toString(){
         return "(" + bookID + ") " + title + ", " + author + ", " + publisher + ", " + year;

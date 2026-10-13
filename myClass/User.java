@@ -15,7 +15,7 @@ public class User extends DB_Element
      * 이용자 객체를 만드는 메소드
      *
      * @param  stID 
-     * @return    x 와 y의 합
+     *          
      */
     public User(int stID, String name){
         this.stID = stID;

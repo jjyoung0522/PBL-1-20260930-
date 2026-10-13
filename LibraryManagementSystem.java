@@ -8,10 +8,10 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /**
- * LibraryManagementSystem 클래스의 설명을 작성하세요.
+ * 대출에 필요한 기능들과 각각의 DB를 다루는 클래스
  *
- * @author (작성자 이름)
- * @version (버전 번호 또는 작성한 날짜)
+ * @author (2025320031 김단이 , 2023320040 이기웅, 2023320006 정준영)
+ * @version (2026.10.14)
  */
 public class LibraryManagementSystem
 {
@@ -20,10 +20,8 @@ public class LibraryManagementSystem
     LibDB<User> userDB;
 
     /**
-     * 메소드 예제 - 사용자에 맞게 주석을 바꾸십시오.
+     * 도서관 시스템에서 이용되는 DB들(책DB, 이용자DB, 대출DB)을 생성하는 메소드
      *
-     * @param  y  메소드의 샘플 파라미터
-     * @return    x 와 y의 합
      */
     public LibraryManagementSystem()
     {
@@ -33,10 +31,10 @@ public class LibraryManagementSystem
     }
 
     /**
-     * 메소드 예제 - 사용자에 맞게 주석을 바꾸십시오.
+     * ID를 이용하여 이용자 객체와 책 객체를 찾아 각각 대출DB Key와 Value에 저장하는 메소드
      *
-     * @param  y  메소드의 샘플 파라미터
-     * @return    x 와 y의 합
+     * @param  userID : 책을 대출하는 이용자의 학번
+     *         bookID : 대출할 책 번호
      */
     public void borrowBook(String userID, String bookID)
     {
@@ -44,10 +42,9 @@ public class LibraryManagementSystem
     }
 
     /**
-     * 메소드 예제 - 사용자에 맞게 주석을 바꾸십시오.
+     * DB에 있는 모든 요소를 형식에 맞게 출력하는 메소드
      *
-     * @param  y  메소드의 샘플 파라미터
-     * @return    x 와 y의 합
+     * @param  db : 출력할 DB
      */
     public <T extends DB_Element> void printDB(LibDB<T> db)
     {
@@ -56,10 +53,8 @@ public class LibraryManagementSystem
     }
 
     /**
-     * 메소드 예제 - 사용자에 맞게 주석을 바꾸십시오.
+     * 대출 현황을 출력하는 메소드
      *
-     * @param  y  메소드의 샘플 파라미터
-     * @return    x 와 y의 합
      */
     public void printLoanList()
     {
@@ -71,10 +66,10 @@ public class LibraryManagementSystem
     }
 
     /**
-     * 메소드 예제 - 사용자에 맞게 주석을 바꾸십시오.
+     * 책 데이터가 들어있는 txt파일을 읽어 와 책DB에 읽어낸 책 모두를 저장하는 메소드
      *
-     * @param  y  메소드의 샘플 파라미터
-     * @return    x 와 y의 합
+     * @param     bookFile : 책 데이터 파일의 컴퓨터 내 저장위치
+     * @return    LibDB<Book> : 데이터 파일 속 책이 모두 저장된 책 DB
      */
     public LibDB<Book> setBookDB(String bookFile)
     {
@@ -107,10 +102,10 @@ public class LibraryManagementSystem
     }
 
     /**
-     * 메소드 예제 - 사용자에 맞게 주석을 바꾸십시오.
+     * 이용자 데이터가 들어있는 txt파일을 읽고 이용자DB에 읽어낸 이용자 모두를 저장하는 메소드
      *
-     * @param  y  메소드의 샘플 파라미터
-     * @return    x 와 y의 합
+     * @param     userFile : 이용자 데이터 파일의 컴퓨터 내 저장위치
+     * @return    LibDB<User> : 데이터 파일 속 이용자가 모두 저장된 이용자DB
      */
     public LibDB<User> setUserDB(String userFile)
     {
