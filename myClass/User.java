@@ -22,10 +22,20 @@ public class User extends DB_Element
         this.name = name;
     }
 
+    /**
+     * DB_Element의 getID를 오버라이딩한 메소드로 학번을 반환.
+     *
+     * @return    학번
+     */
     public String getID(){
         return String.valueOf(stID);
     }
 
+    /**
+     * 이용자 정보를 형식에 맞게 반환하는 메소드
+     *
+     * @return    학번과 이름을 형식에 맞추어 반환
+     */
     public String toString(){
         return "[" + stID + "] " + name;
     }

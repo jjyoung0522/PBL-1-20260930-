@@ -32,7 +32,7 @@ public class Book extends DB_Element
     }
 
     /**
-     * DB_Element의 getID를 오버라이딩한 메소드로 책 번호 반환.
+     * DB_Element의 getID를 오버라이딩한 메소드로 책 번호를 반환.
      *
      * @return    책 번호
      */
