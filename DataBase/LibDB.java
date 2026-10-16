@@ -7,7 +7,7 @@ import myClass.*;
  * 도서관시스템에서 사용되는 각각의 DB를 다루는 클래스
  *
  * @author (2025320031 김단이 , 2023320040 이기웅, 2023320006 정준영)
- * @version (2026.10.14)
+ * @version (2026.10.16)
  */
 public class LibDB<T>
 {
@@ -40,7 +40,6 @@ public class LibDB<T>
      */
     public T findElement(String ID){
         Iterator<T> dbIterator = db.iterator();
-
         while(dbIterator.hasNext()){
             DB_Element element = (DB_Element) dbIterator.next();
             if (element.getID().equals(ID)){

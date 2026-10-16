@@ -4,7 +4,7 @@ package myClass;
  * 책 객체를 만들고 생성된 책 객체의 여러가지 기능을 다루는 클래스
  *
  * @author (2025320031 김단이 , 2023320040 이기웅, 2023320006 정준영)
- * @version (2026.10.14)
+ * @version (2026.10.16)
  */
 public class Book extends DB_Element
 {
